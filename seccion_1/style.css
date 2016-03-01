@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-feb-2016, 18:34:11
+    Author     : Vicente
+*/
+a{
+    text-decoration: none;
+    color:black;
+}
+.main {
+    background-color:#88c4ff;
+    height: 800px;
+    border:ridge black;
+    border-radius: 5px;
+}
+
+.encabezado {
+    height: 160px;
+    background-image:url("../Fondo_encabezado2.png");
+    background-position:initial;
+    border-bottom-style: dashed;
+    text-align: center;
+}
+
+.cuerpo {
+    height: 637px;
+    width: 84%;
+    background-color: #88c4ff;
+    float: right;
+}
+
+.columna {
+    width: 15%;
+    height: 637px;
+    float: left;
+    border-right-style: solid;
+    background-color: #55aaff;
+}
+
+.content {
+    margin-left: 5%;
+}
+
+.boton{
+    height: 40px;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    padding-top: 10%;    
+    text-align: center;
+    cursor:pointer;
+    position: relative;
+    bottom: 0;
+}
+.boton_propio{
+    height: 40px;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    padding-top: 10%;    
+    text-align: center;
+    cursor:pointer;
+    position: relative;
+    bottom: 0;
+    background-color: #ffaa55;
+}
+.boton:active{
+    /* Posicion del boton al clickearlo */
+    bottom: -5px;
+}
+.boton_propio:active{
+    /* Posicion del boton al clickearlo */
+    bottom: -5px;
+}
+#anim{
+    width: 600px;
+    height: 600px;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
+}
+@keyframes slide{
+    from{
+        background-image:url("../img3.jpg");
+    }
+    to{
+        background-image:url("../img2.jpg");
+    }
+}

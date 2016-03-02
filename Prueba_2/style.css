@@ -1,0 +1,130 @@
+body{
+    padding-top: 220px;
+}
+.columna {
+    width: 200px;
+    height: 880px;
+    background-color: #663333;
+    float:left;
+    border: 2px solid #336666;
+    border-radius: 5px;
+    position: absolute;
+    top:1em;
+}
+
+.columna img{
+    width: 200px;
+    height: 200px;
+}
+nav {
+    float: right;
+    color:white;
+    text-decoration: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 10px;
+}
+	
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    width: 200px;
+    border-bottom: 1px solid #336666;
+}
+			
+nav ul li a {
+    padding-left: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+			
+nav ul li a:hover {
+    background: #336666;
+}
+header img{
+    width:inherit;
+    height: inherit;
+}
+
+.cabecera {
+    width:950px;
+    height: 200px;
+    background-color: #336666;
+    left: 250px;
+    border: 2px solid #663333;
+    border-radius: 5px;
+    position:absolute;
+    display: block;
+    top:1em;
+    z-index: 10;
+}
+
+#lineanoticias{
+    margin-top: 30px;
+    height: 20px;
+    width: 950px;
+    top:10px;
+    position:absolute;
+}
+#linea1{
+    width: 880px;
+    height: 2px;
+    background-color: black;
+    float: right;
+}
+
+#lineaactividades{
+    margin-top: 50px;
+    height: 20px;
+    width: 950px;
+    top: 310px;
+    position: absolute;
+}
+#linea2{
+    width: 850px;
+    height: 2px;
+    background-color: black;
+    float: right;
+}
+
+.cuadro {
+    width: 250px;
+    height: 250px;
+    background-color: #336666;
+    margin-right: 95px;
+    float:left;
+    border: 2px solid #663333;
+    border-radius: 5px;
+}
+.contenedor{
+    margin-top: 30px;
+    height: 250px;
+    display: block;
+    position: absolute;
+}
+#cont1{
+    top:60px;
+    position: absolute;
+}
+#cont2{
+    top:380px;
+    position: absolute;
+}
+
+.principal {
+    left: 250px;
+    top:220px;
+    width: 1050px;
+    height: 800px;
+    overflow:auto;
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+}

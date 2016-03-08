@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>Pagina de prueba 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <script src="../js/jssor.slider.mini.js"></script>
+       <script>
+             jQuery(document).ready(function ($) {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 4,
+                $SpacingX: 4,
+                $SpacingY: 4,
+                $Orientation: 2,
+                $Align: 0
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 810);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+    </head>
+    <body>
+    
+        <header >
+            <img src="../Imagenes/img3.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="..">Inicio</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li>Noticias</li>
+                    <li><a href="#">Actividades</a></li>
+                    <li><a href="#">Apuntate/Donaciones</a></li>
+                    <li><a href="#">Login miembros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <div id="lineaPrincipal">Noticia destacada<hr id="linea1"/></div>
+            <div id="NotPrincipal">
+                <div id="ImgPrincipal"> <img src="../Imagenes/img4.jpg"></div>
+                <div id="TexPrincipal"></div>
+            </div>
+            <div id="lineanoticias">Noticias<hr id="linea2"/></div>
+            <div class="contenedor" id="cont1">
+                <div class="cuadro" ></div>
+                <div class="cuadro" ></div>
+                <div class="cuadro" ></div>
+                <div class="cuadro" ></div>
+            </div>
+        </section>
+        <footer>Pie de pagina</footer>
+    </body>
+</html>

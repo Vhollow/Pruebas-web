@@ -2,7 +2,7 @@ body{
     padding: 0;
     padding-top: 5em;
     margin: 0;
-    background-image: url("Fondos/Fondo2.png");
+    background-image: url("../Fondos/Fondo2.png");
 }
 
 header {
@@ -61,56 +61,74 @@ footer {
     text-align: center;
     color:white;
 }
-img{
-    height: inherit;
-    width: inherit;
-}
-h1{
-    text-align: center;
-}
+
 #content{
     width: 90%;
-    height: 60em;
+    height: 67em;
     padding: 60px;
     padding-top: 0px;
     display: block;
     margin: 20px auto;
     left: 0;
 }
+#lineaPrincipal{
+    margin-top: 30px;
+    height: 20px;
+    width: 51em;
+    font-size:1.5em;
+}
+#linea1{
+    width: 43em;;
+    height: 2px;
+    background-color: black;
+    float: right;
+}
+#NotPrincipal{
+    margin-top: 2em;
+    width: 100%;
+    height: 20em;
+    border: 2px solid #663333;
+    border-radius: 5px;
+    overflow:hidden;
+    display: inline-block;
+    background-color: white;
+}
+#ImgPrincipal{
+    width: 50%;
+    height: inherit;
+    float: left;
+}
+#ImgPrincipal img{
+    width: 100%;
+    height: inherit;
+}
+#TexPrincipal{
+    float: left;
+    height: inherit;
+    background-color: white;
+    padding-left: 1em;
+}
+
 #lineanoticias{
     margin-top: 30px;
     height: 20px;
     width: 1200px;
-    top:20em;
+    top:33em;
     position:absolute;
 }
-#linea1{
+#linea2{
     width: 1120px;
     height: 2px;
     background-color: black;
     float: right;
 }
-
-#lineaactividades{
-    margin-top: 50px;
-    height: 20px;
-    width: 1200px;
-    top: 41.5em;
-    position: absolute;
-}
-#linea2{
-    width: 1090px;
-    height: 2px;
-    background-color: black;
-    float: right;
-}
-
 .cuadro {
-    width: 15.5em;
+    width: 30.5em;
     height:15.5em;
     background-color: white;
     background-size: 15.5em;
-    margin-left: 50px;
+    margin-top: 3em;
+    margin-left: 6em;
     float:left;
     border: 2px solid #663333;
     border-radius: 5px;
@@ -123,18 +141,28 @@ h1{
     position: absolute;
 }
 #cont1{
-    top:24em;
+    top:35em;
     position: absolute;
 }
-#cont2{
-    top:47em;
+
+.jssora02l, .jssora02r {
+    display: block;
     position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url('img/a02.png') no-repeat;
+    overflow: hidden;
 }
-#ImgPrincipal{
-    margin-left: 50px;
-    width: 72.5em;
-    height: 200px;
-    background-color: blueviolet;
-    border: 2px solid #663333;
-    border-radius: 5px;
+.jssora02l { background-position: -3px -33px; }
+.jssora02r { background-position: -63px -33px; }
+.jssora02l:hover { background-position: -123px -33px; }
+.jssora02r:hover { background-position: -183px -33px; }
+.jssora02l.jssora02ldn { background-position: -3px -33px; }
+.jssora02r.jssora02rdn { background-position: -63px -33px; }
+#slides{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }

@@ -25,5 +25,23 @@ function alternar_banner(){
    	contador = contador % array_imagen.length ;
    	setTimeout("alternar_banner()",1000) ;
 }
-
+function cambio (s){
+    switch(s){
+        case "1":window.document["banner"].src = array_imagen[0].src;
+                contador=0;
+                break;
+        case "2":window.document["banner"].src = array_imagen[1].src;
+                contador=1;
+                break;
+        case "3":window.document["banner"].src = array_imagen[2].src;
+                contador=2;
+                break;
+        case "4":window.document["banner"].src = array_imagen[3].src;
+                contador=3;
+                break;
+        default:window.document["banner"].src = array_imagen[1].src;
+                contador=1;
+                break;
+    }
+}
 

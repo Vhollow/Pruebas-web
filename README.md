@@ -8,6 +8,7 @@ Pruebas personales para la realizacion de paginas web.
 -Las pruebas 1, 2 y 3 contienen pruebas básicas y de distintos diseños, en ***html*** y ***css*** exclusivamente.
 
 -Prueba 4: Comienzo con ***javascript***. Banner simple (sin diseño de pagina).
+    -Cambio: Añadidas flechas para cambiar imagen.
 
 #Web-tests
 Personal tests for web pages.
@@ -15,3 +16,4 @@ Personal tests for web pages.
 -Tests 1, 2 and 3 contain basic tests and designs, only using ***html*** and ***css***.
 
 -Test 4: Begining with ***javascript***. Simple banner (without any page design).
+    -Change: Added arrows to change of image.

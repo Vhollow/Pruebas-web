@@ -10,5 +10,28 @@ and open the template in the editor.
 img{
     width: 650px;
     height: 400px;
+    z-index: 1;
+}
+#a{
+    width: 650px;
+    height: 400px;
+    display: inline-block;
+    overflow: hidden;
+}
+#Izq{
+    width: 30px;
+    height: 30px;
+    top:190px;
+    left: 15px;
+    position: absolute;
+    z-index: 2;
+}
+#a #Der{
+    width: 30px;
+    height: 30px;
+    top:190px;
+    left: 620px;
+    position: absolute;
+    z-index: 2;
 }
 

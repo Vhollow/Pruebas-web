@@ -22,26 +22,17 @@ contador = 0 ;
 function alternar_banner(){ 
    	window.document["banner"].src = array_imagen[contador].src ;
    	contador ++ ;
-   	contador = contador % array_imagen.length ;
-   	setTimeout("alternar_banner()",1000) ;
+   	if(contador>3){contador=0;} 
+   	setTimeout("alternar_banner()",10000) ;
 }
-function cambio (s){
-    switch(s){
-        case "1":window.document["banner"].src = array_imagen[0].src;
-                contador=0;
-                break;
-        case "2":window.document["banner"].src = array_imagen[1].src;
-                contador=1;
-                break;
-        case "3":window.document["banner"].src = array_imagen[2].src;
-                contador=2;
-                break;
-        case "4":window.document["banner"].src = array_imagen[3].src;
-                contador=3;
-                break;
-        default:window.document["banner"].src = array_imagen[1].src;
-                contador=1;
-                break;
-    }
+function izquierda(){
+    contador--;
+    if(contador<0) contador=4;
+    window.document["banner"].src = array_imagen[contador].src ;
+}
+function derecha(){
+    contador++;
+    if(contador>3) contador=0;
+    window.document["banner"].src = array_imagen[contador].src ;
 }
 

@@ -41,10 +41,10 @@ function ci(){
 function ci2(){
     document.getElementById("Izq").src="Imagenes/i1.png";
 }
-function di(){
+function cd(){
     document.getElementById("Der").src="Imagenes/d2.png";
 }
-function di2(){
+function cd2(){
     document.getElementById("Der").src="Imagenes/d1.png";
 }
 

@@ -35,4 +35,17 @@ function derecha(){
     if(contador>3) contador=0;
     window.document["banner"].src = array_imagen[contador].src ;
 }
+function ci(){
+    document.getElementById("Izq").src="Imagenes/i2.png";
+}
+function ci2(){
+    document.getElementById("Izq").src="Imagenes/i1.png";
+}
+function di(){
+    document.getElementById("Der").src="Imagenes/d2.png";
+}
+function di2(){
+    document.getElementById("Der").src="Imagenes/d1.png";
+}
+
 

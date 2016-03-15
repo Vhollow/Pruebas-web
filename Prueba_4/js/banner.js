@@ -25,25 +25,31 @@ function alternar_banner(){
    	if(contador>3){contador=0;} 
    	setTimeout("alternar_banner()",10000) ;
 }
+//funcion para cambiar a la imagen anterior
 function izquierda(){
     contador--;
     if(contador<0) contador=4;
     window.document["banner"].src = array_imagen[contador].src ;
 }
+//funcion para cambiar a la imagen siguiente
 function derecha(){
     contador++;
     if(contador>3) contador=0;
     window.document["banner"].src = array_imagen[contador].src ;
 }
+//cambia la flecha izquierda al pulsar
 function ci(){
     document.getElementById("Izq").src="Imagenes/i2.png";
 }
+//vuelve a cambiarla al levantar
 function ci2(){
     document.getElementById("Izq").src="Imagenes/i1.png";
 }
+//cambia la flecha derecha al pulsar
 function cd(){
     document.getElementById("Der").src="Imagenes/d2.png";
 }
+//vuelve a cambiarla al levantar
 function cd2(){
     document.getElementById("Der").src="Imagenes/d1.png";
 }
